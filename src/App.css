@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+
+:root {
+  --primary-white : #fff;
+  --primary-blue : rgb(35, 155, 202);
+  --primary-dark : rgba(255,255,255,0)
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Roboto Condensed" sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+
+/* ************************   NAVBAR *************************************** */
+
+.logo {
+  width: 3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* **********************menu links *********************************** */
+
+nav a.nav-link {
+  font-weight: 200;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul li {
+  text-transform: uppercase;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-nav > li > a {
+  /* margin-right : 0s.75rem; */
+  /* margin-left: 5.75rem; */
+  padding-right: 25px !important;
+  padding-left: 25px !important;
+  color: var(--primary-white) !important;
+  border-bottom:  0.1875rem solid var(--primary-dark)
+}
+
+
+.navbar-brand {
+  max-width: 17..25em;
+  padding: 0;
+  height: 4rem  !important;
+
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
+  border-bottom: 0.1875rem solid var(--primary-blue);
+}
+.navbar-nav > li > a:hover{
+  border-bottom: 0.1875rem solid var(--primary-blue);
 }
