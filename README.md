@@ -60,3 +60,10 @@ imports in the components where it is used:
 
 use : 
  <FontAwesomeIcon icon = {faBars} style = {{color : "#ffff"}}/>
+
+ ### react typed library
+ intall : npm install react-typed --save\
+ npm install react-particles-js\
+
+ import : import Typed from "react-typed"\
+ import Particle from "react-particles"
